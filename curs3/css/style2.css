@@ -1,0 +1,44 @@
+div { /*universal se noteaza cu * */
+    width: 40%;
+    border: 2px solid blue;
+    float: left; /*asezarea cutiilor*/
+    padding: 25px;
+    margin: 20px;
+}
+
+#stanga {
+    background-color: aquamarine;
+
+}
+#dreapta {
+    background-color: azure;
+}
+.p1 {
+    color: blue;
+}
+.p2 {
+    color: black;
+}
+.p3 {
+    font-size: 30px;
+}
+
+#idp5 {
+    color: red;
+}
+
+#bottom {
+    width: 100%;
+}
+#bottom p{ /*toti copii din bottom sa fie colorate cu rosu*/
+    color: red;
+}
+#bottom > p{ /*doar copii directi */
+    color: blue;
+}
+#bottom article + p { /*primul paragraf dupa articol*/
+    color: aquamarine;
+}
+#bottom article ~ p {/*toate dupa articol*/
+    color: rgb(122, 122, 11);
+}

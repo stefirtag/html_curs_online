@@ -1,0 +1,9 @@
+p {
+    color: red !important; /*nu tine regula de prioritate, toate p sunt rosii*/
+}
+#idp1 {
+    color: blue;
+}
+.clasap1 {
+    color: aquamarine ;/*daca sunt 2 !important ele se anuleaza*/
+}
