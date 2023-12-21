@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Formular de contact</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="oras">Selecteaza orasul</label>
+            <select name="oras" id="oras" required>
+                <option value="">Selecteaza orasul...</option>
+                <option value="1">Bucuresti</option>
+                <option value="2">Suceava</option>
+                <option value="3">Iasi</option>
+                <option value="4">Dorohoi</option>
+                <option value="5">Darabani</option>
+            </select>
+        </div>
+        <div>
+            <label for="cursuri">Cursuri la care doriti sa participati</label>
+            <select name="cursuri" id="cursuri" multiple> <!--pentru a selcta mai multe-->
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+                <option value="PHP">PHP</option>
+            </select>
+        </div>
+        <div>
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="cv">CV</label>
+            <input type="file" name="cv" id="cv">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Program cursuri</legend>
+                <input type="radio" name="program" id="program" value="dim">
+                <label for="dim">Dimineata</label>
+                <input type="radio" name="program" id="program" value="pr" checked>
+                <label for="pr">Pranz</label>
+                <input type="radio" name="program" id="program" value="seara" disabled>
+                <label for="seara">Seara</label>
+            </fieldset>
+        </div>
+        <div>
+            <input type="checkbox" name="termeni" id="termeni" value="1">
+            <label for="termeni">Termeni si conditii</label>
+            <input type="checkbox" name="abonat" id="abonat">
+            <label for="abonat">Ma abonat</label>
+        </div>
+        <div>
+            <input type="submit" value="Trimite date">
+        </div>
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
